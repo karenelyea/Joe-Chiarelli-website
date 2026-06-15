@@ -9,7 +9,7 @@ const LOGO = "/images/logo.png";
 const PHOTO = "/images/photo.png";
 const SIGNATURE = "/images/signature.png";
 
-const tag = (cat) => ({
+const tag = (cat: string) => ({
   display:"inline-block",fontSize:10,fontWeight:700,letterSpacing:"0.08em",
   textTransform:"uppercase",padding:"2px 7px",borderRadius:2,marginBottom:6,
   background:cat==="s"?sBg:cat==="e"?eBg:iBg,
@@ -99,11 +99,13 @@ export default function App() {
   const periods = [...new Set(news.map(n => n.p))];
   const filtered = filter === "all" ? news : news.filter(n => n.c === filter);
 
-  const Nav = ({id,label,first,last}) => (
+  type NavProps = { id: string; label: string; first?: boolean; last?: boolean };
+  const Nav = ({id,label,first,last}: NavProps) => (
     <button onClick={()=>setTab(id)} style={{padding:"7px 18px",cursor:"pointer",fontFamily:"Arial,sans-serif",fontSize:12,fontWeight:700,letterSpacing:"0.1em",textTransform:"uppercase",border:"1px solid",borderRight:last?"1px solid":"none",borderColor:tab===id?navy:"#e0ddd6",background:tab===id?navy:"#fff",color:tab===id?"#fff":"#6b6560",borderRadius:first?"3px 0 0 3px":last?"0 3px 3px 0":"0"}}>{label}</button>
   );
 
-  const FBtn = ({val,label}) => {
+  type FBtnProps = { val: string; label: string };
+  const FBtn = ({val,label}: FBtnProps) => {
     const on = filter===val;
     const col = val==="all"?[navy,"#fff"]:val==="s"?[sTxt,sBg]:val==="e"?[eTxt,eBg]:[iTxt,iBg];
     return <button onClick={()=>setFilter(val)} style={{fontFamily:"Arial,sans-serif",fontSize:10,fontWeight:700,letterSpacing:"0.08em",textTransform:"uppercase",padding:"5px 12px",borderRadius:2,cursor:"pointer",border:`1px solid ${on?col[0]:"#e0ddd6"}`,background:on?(val==="all"?navy:col[1]):"#fff",color:on?(val==="all"?"#fff":col[0]):"#6b6560"}}>{label}</button>;
