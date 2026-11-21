@@ -133,10 +133,10 @@ export default function App() {
         {tab==="home" && (
           <div>
             <div style={{textAlign:"center",marginBottom:8}}>
-              <div style={{display:"inline-block",fontSize:10,fontWeight:700,letterSpacing:"0.14em",textTransform:"uppercase",color:red,marginBottom:4}}>Winnebago County Board Chairman</div>
+              <div style={{display:"inline-block",fontSize:15,fontWeight:700,letterSpacing:"0.14em",textTransform:"uppercase",color:red,marginBottom:4}}>Winnebago County Board Chairman</div>
             </div>
             <div style={{textAlign:"center",marginBottom:32}}>
-              <div style={{width:380,height:380,borderRadius:"50%",border:`4px solid ${navy}`,margin:"0 auto",display:"flex",alignItems:"center",justifyContent:"center",overflow:"hidden",background:"#fff"}}>
+              <div style={{width:"100%",maxWidth:380,aspectRatio:"1",boxSizing:"border-box",borderRadius:"50%",border:`4px solid ${navy}`,margin:"0 auto",display:"flex",alignItems:"center",justifyContent:"center",overflow:"hidden",background:"#fff"}}>
                 <img src={PHOTO} alt="Joseph V. Chiarelli" style={{width:"88%",height:"88%",objectFit:"cover",objectPosition:"center 20%",borderRadius:"50%"}}/>
               </div>
             </div>
