@@ -80,7 +80,7 @@ function Footer() {
         <div style={{fontSize:12,lineHeight:1.8,color:"#3a3530"}}>
           <div style={{fontWeight:700,color:red,marginBottom:6,fontSize:11,letterSpacing:"0.1em",textTransform:"uppercase"}}>Contact Information</div>
           <div>Phone: 815-721-2014</div>
-          <div>Email: <a href="mailto:campaign@joechiarelli.com" style={{color:navy}}>campaign@joechiarelli.com</a></div>
+          <div>Email: <a href="mailto:campaign@josephchiarelli.com" style={{color:navy}}>campaign@josephchiarelli.com</a></div>
           <div>Address: 2601 Reid Farm Rd. Ste #B, Rockford, IL 61114</div>
           <div><a href="https://www.facebook.com/ChiarelliForWinnebagoCountyBoardChairman" style={{color:navy}} target="_blank" rel="noreferrer">Facebook</a></div>
         </div>
@@ -303,7 +303,7 @@ export default function App() {
             </div>
             <div style={{maxWidth:480,background:"#fff",border:"1px solid #e0ddd6",borderTop:`3px solid ${gold}`,borderRadius:3,padding:"24px 28px",fontSize:14,lineHeight:2,color:"#3a3530"}}>
               <div>Phone: 815-721-2014</div>
-              <div>Email: <a href="mailto:campaign@joechiarelli.com" style={{color:navy}}>campaign@joechiarelli.com</a></div>
+              <div>Email: <a href="mailto:campaign@josephchiarelli.com" style={{color:navy}}>campaign@josephchiarelli.com</a></div>
               <div>Address: 2601 Reid Farm Rd. Ste #B, Rockford, IL 61114</div>
               <div><a href="https://www.facebook.com/ChiarelliForWinnebagoCountyBoardChairman" style={{color:navy}} target="_blank" rel="noreferrer">Facebook</a></div>
             </div>
